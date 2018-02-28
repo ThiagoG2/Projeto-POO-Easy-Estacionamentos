@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.easyestacionamento.gui.TelasAtualizarController">
+   <top>
+      <AnchorPane prefHeight="305.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="18.0" layoutY="75.0" prefHeight="21.0" prefWidth="408.0" text="Informe o CPF do cliente que terá os dados atualizado:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="165.0" text="Telefone:" />
+            <Label layoutX="133.0" layoutY="126.0" text="Nome Completo:" />
+            <TextField fx:id="cpfCliente" layoutX="402.0" layoutY="73.0" />
+            <TextField fx:id="nomeCompletoCliente" layoutX="236.0" layoutY="122.0" />
+            <TextField fx:id="telefoneCliente" layoutX="236.0" layoutY="161.0" />
+            <Button fx:id="btnAtualizarCliente" layoutX="477.0" layoutY="266.0" mnemonicParsing="false" onAction="#atualizarCliente" prefHeight="20.0" prefWidth="83.0" text="Salvar" />
+            <Label layoutX="96.0" layoutY="14.0" prefHeight="49.0" prefWidth="409.0" text="Atualizar Cadastro de Clientes">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="mensalista" layoutX="236.0" layoutY="200.0" mnemonicParsing="false" />
+            <Label layoutX="121.0" layoutY="200.0" prefHeight="17.0" prefWidth="102.0" text="Cliente Mensalista:" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

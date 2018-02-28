@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.easyestacionamento.gui.TelasDeletarController">
+   <children>
+      <Label layoutX="44.0" layoutY="23.0" text="Remover Estacionamento">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="119.0" text="Nome Estacionamento:" />
+      <Button fx:id="btnDeletarEstacionamento" layoutX="255.0" layoutY="188.0" mnemonicParsing="false" onAction="#deletarEstacionamento" prefHeight="25.0" prefWidth="77.0" text="Remover" />
+      <TextField fx:id="nomeEstacionamento" layoutX="171.0" layoutY="115.0" prefHeight="25.0" prefWidth="162.0" />
+   </children>
+</Pane>
